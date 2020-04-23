@@ -1,0 +1,34 @@
+{
+  "name": "fide-chess",
+  "version": "0.1.0",
+  "description": "\"Scraper for FIDE website\"",
+  "main": "dist/index.js",
+  "scripts": {
+	  "build": "tsc --sourceMap",
+   		"test": "node tests/test1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theLAZYmd/fide-chess.git"
+  },
+  "keywords": [
+    "chess",
+    "ratings",
+    "scraper",
+    "fide"
+  ],
+  "author": "theLAZYmd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theLAZYmd/fide-chess/issues"
+  },
+  "homepage": "https://github.com/theLAZYmd/fide-chess#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.18",
+    "typescript": "^3.8.3"
+  }
+}
