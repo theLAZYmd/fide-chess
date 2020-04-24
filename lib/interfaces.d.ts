@@ -43,6 +43,7 @@ export interface SearchOptions {
     bornAfter?: number;
     bornBefore?: number;
     gender?: 'M' | 'F';
+    nb?: number;
 }
 export interface TableRow {
     [key: string]: string | number;

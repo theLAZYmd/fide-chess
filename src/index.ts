@@ -1,11 +1,12 @@
 import { GET } from './utils/requests';
 import { users } from './config.json';
-import { SearchConfig, SearchOptions } from './interfaces';
+import { SearchConfig, SearchOptions, SearchProfile } from './interfaces';
 import Get from './get';
 
 export default class FIDE {
 
 	static async search(searchstring: string, options?: SearchOptions) {
+		let nb = options?.nb || 10;
 		let data = await GET({
 			url: users,
 			params: {
@@ -25,7 +26,7 @@ export default class FIDE {
 				search_gender: options?.gender
 			} as SearchConfig
 		});
-		return Get.tables(data);
+		return Get.tables(data).slice(0, nb) as any as SearchProfile[];
 	}
 
 }
