@@ -1,11 +1,12 @@
 {
   "name": "fide-chess",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "\"Scraper for FIDE website\"",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-	  "build": "tsc --sourceMap",
-   		"test": "node tests/test1"
+    "build": "tsc --sourceMap",
+    "test": "node tests/test1"
   },
   "repository": {
     "type": "git",
