@@ -56,11 +56,12 @@ export interface TableRow {
 export type Table = TableRow[]
 
 export interface SearchProfile {
-	Name: string,
-	Title: Title,
-	Fed: CountryCode,
-	'Std.': number | null,
-	'Rpd.': number | null,
-	'Blz.': number | null,
+	id: string
+	Name: string
+	Title: Title
+	Fed: CountryCode
+	'Std.': number | null
+	'Rpd.': number | null
+	'Blz.': number | null
 	'B-Year': number
 }

@@ -1,4 +1,5 @@
-import { SearchOptions } from './interfaces';
+import { SearchOptions, SearchProfile } from './interfaces';
 export default class FIDE {
-    static search(searchstring: string, options?: SearchOptions): Promise<import("./interfaces").TableRow[]>;
+    static search(searchstring: string, options?: SearchOptions): Promise<SearchProfile[]>;
 }
+export * from './interfaces';

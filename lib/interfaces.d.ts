@@ -49,4 +49,14 @@ export interface TableRow {
     [key: string]: string | number;
 }
 export declare type Table = TableRow[];
+export interface SearchProfile {
+    id: string;
+    Name: string;
+    Title: Title;
+    Fed: CountryCode;
+    'Std.': number | null;
+    'Rpd.': number | null;
+    'Blz.': number | null;
+    'B-Year': number;
+}
 export {};

@@ -1,7 +1,9 @@
-import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios';
-import { base } from '../config.json'
+import Axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios';
+import { base as baseURL } from '../config.json'
 
-axios.defaults.baseURL = base;
+const axios = Axios.create({
+	baseURL
+});
 
 export function GET(options: AxiosRequestConfig): Promise<any> {
 	options = Object.assign(options, {

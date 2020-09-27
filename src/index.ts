@@ -30,3 +30,5 @@ export default class FIDE {
 	}
 
 }
+
+export * from './interfaces';
